@@ -27,7 +27,7 @@ function App() {
       <h1>Todo List</h1>
       <div className="todo-list">
         {todos.map((todo) => (
-          <div className="todo">
+          <div className="todo" key={todo.id}>
             <div className="content">
               <p>{todo.text}</p> 
                <p className="category">
